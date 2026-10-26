@@ -70,6 +70,9 @@
 - **No Operational Records**: Never use AGENTS.md to record task progress, deployment history, timestamps, debugging notes, completed actions, temporary decisions, or environment status.
 - **No Implicit Memory**: Do not use AGENTS.md as persistent memory, a session handoff document, or a working journal.
 - **Stable Instructions Only**: AGENTS.md should contain durable engineering constraints, project conventions, and operational instructions, not transient facts or historical events.
+- **Documentation-Code Conflicts**: When explanatory documentation conflicts with the existing code's design, conventions, or implementation, follow the existing code, subject to the frontend exception below. This applies to descriptive documentation and does not override explicit current user requirements or applicable AGENTS.md instructions.
+- **Frontend Conflict Decisions**: For conflicts between explanatory documentation and frontend code, immediately report the discrepancy to the user and wait for their decision before making changes affected by the conflict. Continue independent work that does not depend on that decision.
+- **Report Discovered Conflicts**: In the final response, list all documentation-code conflicts discovered during the task, including frontend conflicts. Identify the conflicting documentation and code, how each was handled, and any decisions still pending.
 - **Live State Is Authoritative**: Never treat AGENTS.md, historical documentation, or previous conversation records as authoritative evidence of current runtime or deployment state. Verify current state through relevant live systems, configuration, APIs, or logs when that state matters to the task.
 - **No Unverified State Assumptions**: If current state cannot be verified, explicitly state the uncertainty. Do not infer that a service is running, stopped, deployed, or configured solely from historical records.
 
