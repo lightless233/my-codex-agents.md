@@ -42,7 +42,7 @@
 ### User-Facing Content
 
 - **User-Facing Copy Only**: UI text must serve actual user needs. Never expose implementation details, internal reasoning, debugging notes, architectural decisions, or development history as user-facing content.
-- **No Explanatory Clutter**: Do not add redundant descriptions, helper text, tooltips, banners, or informational messages merely to explain why a feature exists or how it was implemented.
+- **No Explanatory Clutter**: Use clear layout, grouping, and visual hierarchy to make the interface understandable. Avoid unnecessary secondary labels, descriptions, helper text, tooltips, banners, or informational messages, especially those explaining implementation details. Preserve essential control labels, accessibility text, and genuinely useful guidance.
 - **Separate Technical Explanations**: Keep implementation rationale and traceability information in code comments or appropriate documentation, not in the UI.
 - **Respect Existing Copy**: Preserve the project's established writing style and information density. Do not add unsolicited labels, instructions, or explanatory paragraphs.
 - **Minimal UI Changes**: Add user-visible text only when explicitly required or genuinely necessary for users to understand or operate the feature.
